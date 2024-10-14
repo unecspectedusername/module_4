@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'lightgray': '#f0f0f0',
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Вася Иванов - обо мне</title>
+</head>
+
+<body>
+    <header class="flex justify-center w-full bg-gray-700">
+        <nav class="w-full md:w-3/4 flex py-3">
+            <a href="index.html"><img src="./images/logo.svg" class="mx-5 md:mr-10 mt-2" width="80px" alt="Logo" /></a>
+            <ul class="flex py-3 pl-3">
+                <li class="mr-4">
+                    <a class="text-slate-50 hover:text-amber-500"
+                        href="index.html">Главная</a>
+                </li>
+                <li class="mr-4">
+                    <a class="text-slate-50 px-1 pb-0.5 border-b-2 border-amber-500 hover:text-amber-500" href="#">Обо мне</a>
+                </li>
+                <li class="mr-4">
+                    <a class="text-slate-50 hover:text-amber-500" href="contact.html">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bg-[url('./images/hero.jpg')] w-full min-h-[550px] grid md:grid-rows-2 justify-items-center">
+            <div class="w-3/4 text-slate-50 pt-10">
+                <h1 class="text-7xl">Обо мне</h1>
+                <p class="mt-3">Вхожу в топ-10 лучших маркетологов России<br>по версии моей мамы</p>
+            </div>
+            <div
+                class="w-3/4 grid grid-cols-2 md:grid-cols-3 grid-rows-2 md:grid-rows-1 justify-items-center text-center text-slate-50">
+                <div class="">
+                    <p class="text-6xl md:text-9xl">26</p>
+                    <p>лет назад я появился<br />на свет</p>
+                </div>
+                <div class="">
+                    <p class="text-6xl md:text-9xl">8</p>
+                    <p>раз я могу отжаться<br />от пола</p>
+                </div>
+                <div class="md:col-span-1 col-span-2">
+                    <p class="text-6xl md:text-9xl">94</p>
+                    <p>копейки я заработал,<br />тапая хомяка</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="flex flex-col justify-center items-center">
+            <h2 class="text-3xl text-center text-gray-700 my-7">Компании, которым я доверяю</h2>
+            <div
+                class="w-3/4 grid grid-cols-2 md:grid-cols-4 grid-rows-2 md:grid-rows-1 justify-items-center items-center">
+                <img src="./images/kb_logo.png" class="mx-3" height="auto" width="100px" alt="">
+                <img src="./images/bristol_logo.png" height="auto" width="250px" alt="">
+                <img src="./images/winwstyle_logo.png" height="auto" width="auto">
+                <img src="./images/5_logo.png" height="auto" width="250px" alt="">
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="bg-white m-4">
+        <div class="w-3/4 mx-auto p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center">© 2024 Vasya Ivanov™. All Rights Reserved.
+            </span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 sm:mt-0">
+                <li>
+                    <a href="#" class="hover:underline me-4 md:me-6">Обо мне</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="hover:underline me-4 md:me-6">Контакты</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
