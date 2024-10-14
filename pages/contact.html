@@ -22,7 +22,7 @@
 <body>
     <header class="flex justify-center w-full bg-gray-700">
         <nav class="w-full md:w-3/4 flex py-3">
-            <a href="index.html"><img src="../images/logo.svg" class="mx-5 md:mr-10 mt-2" width="80px" alt="Logo" /></a>
+            <a href="index.html"><img src="../images/logo.svg" class="mx-5 md:mr-10 mt-2" width="80" alt="Logo"></a>
             <ul class="flex py-3 pl-3">
                 <li class="mr-4">
                     <a class="text-slate-50 hover:text-amber-500" href="index.html">Главная</a>
@@ -32,7 +32,8 @@
                         мне</a>
                 </li>
                 <li class="mr-4">
-                    <a class="text-slate-50 px-1 pb-0.5 border-b-2 border-amber-500 hover:text-amber-500" href="#">Контакты</a>
+                    <a class="text-slate-50 px-1 pb-0.5 border-b-2 border-amber-500 hover:text-amber-500"
+                        href="#">Контакты</a>
                 </li>
             </ul>
         </nav>
@@ -44,43 +45,45 @@
 
             <section class="bg-lightgray w-full lg:w-3/4 px-5 lg:px-20 py-10 ">
                 <h2 class="text-2xl text-center mb-6">Форма обратной связи</h2>
-                <form action="" class="space-y-6">
+                <form action="url" class="space-y-6">
                     <div>
                         <label for="first_name">Ваше имя</label>
                         <input type="text" id="first_name"
                             class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg before:ring-amber-500  block w-full p-2.5 mb-3 mt-2"
-                            placeholder="Иван" />
+                            placeholder="Иван">
                     </div>
                     <div>
                         <label for="last_name">Ваша фамилия</label>
                         <input type="text" id="last_name"
                             class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg before:ring-amber-500  block w-full p-2.5 mb-3 mt-2"
-                            placeholder="Иванов" />
+                            placeholder="Иванов">
                     </div>
                     <div>
                         <label for="card_number">Номер банковской карты</label>
                         <input type="text" id="card_number"
                             class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg before:ring-amber-500  block w-full p-2.5 mb-3 mt-2"
-                            placeholder="0000 0000 0000 0000" />
+                            placeholder="0000 0000 0000 0000">
                     </div>
                     <div class="flex gap-4">
                         <div class="basis-1/2">
                             <label for="expiration_date">Срок действия</label>
                             <input type="text" id="expiration_date"
                                 class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg before:ring-amber-500  block w-full p-2.5 mb-3 mt-2"
-                                placeholder="10/28" />
+                                placeholder="10/28">
                         </div>
                         <div class="basis-1/2">
                             <label for="cvv">CVV/CVC</label>
                             <input type="text" id="cvv"
                                 class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg before:ring-amber-500  block w-full p-2.5 mb-3 mt-2"
-                                placeholder="000" />
+                                placeholder="000">
                         </div>
                     </div>
-                    <button type="submit" class="w-full py-3 bg-amber-500 text-white rounded-lg hover:bg-amber-600">Отправить</button>
+                    <button type="submit"
+                        class="w-full py-3 bg-amber-500 text-white rounded-lg hover:bg-amber-600">Отправить</button>
                 </form>
             </section>
             <section class="w-1/2 mt-10 lg:mt-0">
+                <h2 class="text-2xl text-center mb-6">Контакты</h2>
                 <ul class="text-center space-y-6">
                     <li class="space-y-2">
                         <p class="font-semibold">Телефон для связи</p>
@@ -88,11 +91,13 @@
                     </li>
                     <li class="space-y-2">
                         <p class="font-semibold">Email</p>
-                        <a href="mailto:vasyaivanov15@vasya.com" class="font-light italic text-blue-600 hover:underline">vasyaivanov15@vasya.com</a>
+                        <a href="mailto:vasyaivanov15@vasya.com"
+                            class="font-light italic text-blue-600 hover:underline">vasyaivanov15@vasya.com</a>
                     </li>
                     <li class="space-y-2">
                         <p class="font-semibold">Юридический адрес</p>
-                        <p class="font-light italic">123456 Московская обл., г. Балашиха, ул. Красивых Красных Партизан, д. 84, под. 3, эт. 4, синяя дверь справа</p>
+                        <p class="font-light italic">123456 Московская обл., г. Балашиха, ул. Красивых Красных Партизан,
+                            д. 84, под. 3, эт. 4, синяя дверь справа</p>
                     </li>
                 </ul>
             </section>
