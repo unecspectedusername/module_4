@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ссылка на CDN Tailwind и конфиг -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -38,10 +39,12 @@
         </nav>
     </header>
     <main class="flex flex-col justify-center">
+        <!-- <h1> здесь явно лишний, но валидатор w3c ругался на то, что он был помещен внутрь <article>, поэтому пришлось сделать отдельный <h1>, а тот, что в <article> назначить <h2> -->
         <h1 class="text-center text-4xl mt-8 mb-10">Привет, мир!</h1>
         <div class="self-center w-full md:w-3/4 flex flex-col xl:flex-row justify-center gap-x-8">
             <img src="../images/portrait.jpg" alt="Фото Ивана Иванова" class="w-full xl:w-1/2">
             <article class="w-full xl:w-1/2 bg-lightgray shrink-0">
+                <!-- <h2> пришлось вынести за пределы <section> и прописать стили отдельно, чтобы не ругался валидатор w3c -->
                 <h2 class="text-4xl pl-8 pt-8">Вася Иванов</h2>
                 <section class="px-8">
                     <p class="pt-1 text-neutral-500">маркетолог</p>
